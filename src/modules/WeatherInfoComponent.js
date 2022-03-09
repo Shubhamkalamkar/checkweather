@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const WeatherInfoIcons = {
-  sunset: "/react-weather-app/icons/temp.svg",
-  sunrise: "/react-weather-app/icons/temp.svg",
-  humidity: "/react-weather-app/icons/humidity.svg",
-  wind: "/react-weather-app/icons/wind.svg",
-  pressure: "/react-weather-app/icons/pressure.svg",
+  sunset: "/checkweather/icons/temp.svg",
+  sunrise: "/checkweather/icons/temp.svg",
+  humidity: "/checkweather/icons/humidity.svg",
+  wind: "/checkweather/icons/wind.svg",
+  pressure: "/checkweather/icons/pressure.svg",
 };
 
 const WeatherCondition = styled.div`
@@ -97,7 +97,7 @@ const WeatherComponent = (props) => {
           <span>{`${weather?.current?.temp_c}°C`}</span>
           {` | ${weather?.current?.condition?.text}`}
         </Condition>
-        <WeatherLogo src="/react-weather-app/icons/perfect-day.svg" />
+        <WeatherLogo src="/checkweather/icons/perfect-day.svg" />
       </WeatherCondition>
       {/* <Location>{`${weather?.name}, ${weather?.sys?.country}`}</Location> */}
       <Location>{`${weather?.location?.name}, ${weather?.location?.country}`}</Location>

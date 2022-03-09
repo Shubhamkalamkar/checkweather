@@ -45,7 +45,7 @@ const CityComponent =(props)=>{
   const {updateCity, featchWeather}= props;
   return(
     <>
-    <WeatherLogo src="/react-weather-app/icons/perfect-day.svg"/>
+    <WeatherLogo src="/checkweather/icons/perfect-day.svg"/>
     <ChooseCityLabel>Find Weather Of Your City</ChooseCityLabel>
     <SearchBox onSubmit={featchWeather}>
       <input placeholder="City" onChange={(e)=>updateCity(e.target.value)}/>
