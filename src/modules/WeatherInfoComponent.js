@@ -6,6 +6,7 @@ export const WeatherInfoIcons = {
   humidity: "/checkweather/icons/humidity.svg",
   wind: "/checkweather/icons/wind.svg",
   pressure: "/checkweather/icons/pressure.svg",
+  region: "/checkweather/icons/region-1.svg",
 };
 
 const WeatherCondition = styled.div`
@@ -112,6 +113,7 @@ const WeatherComponent = (props) => {
         <WeatherInfoComponent name="humidity" value={weather?.current?.humidity} />
         <WeatherInfoComponent name="wind" value={weather?.current?.wind_kph} />
         <WeatherInfoComponent name="pressure" value={weather?.current?.pressure_mb} />
+        <WeatherInfoComponent name="region" value={weather?.location?.region} />
       </WeatherInfoContainer>
     </>
   );

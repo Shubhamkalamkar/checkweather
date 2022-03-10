@@ -21,6 +21,14 @@ const AppLabel = styled.span`
   font-size: 20px;
   font-weight: bold;
 `;
+// const SearchImg = styled.img`
+// margin: auto;
+//     float: right;
+//     width: 30px;
+//     /* align-items: stretch; */
+//     margin-right: 10px;
+// }
+// `;
 
 function App() {
   const [city, updateCity] = useState();
@@ -38,6 +46,8 @@ function App() {
   return (
     <Container>
       <AppLabel>Weather App</AppLabel>
+        
+  
       {weather ? (
         <WeatherComponent weather={weather} />
       ) : (
